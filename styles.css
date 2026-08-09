@@ -200,25 +200,17 @@ button {
 
 .brand {
   display: inline-flex;
+  height: 100%;
   align-items: center;
-  gap: 11px;
+  overflow: hidden;
   text-decoration: none;
 }
 
-.brand-icon {
+.brand-logo {
   display: block;
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  object-fit: contain;
-}
-
-.brand-name {
-  color: var(--color-ink);
-  font-family: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif;
-  font-size: 1.05rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  width: 152px;
+  height: auto;
+  flex: 0 0 auto;
 }
 
 .global-nav,
@@ -1271,13 +1263,8 @@ button {
     font-size: clamp(1.75rem, 8vw, 2.3rem);
   }
 
-  .brand-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .brand-name {
-    font-size: 0.95rem;
+  .brand-logo {
+    width: 144px;
   }
 
   .hero {
